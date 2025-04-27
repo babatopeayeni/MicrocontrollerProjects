@@ -4,10 +4,10 @@
 
 In this project, I designed and implemented a smart thermostat prototype to manage heating and cooling in response to ambient temperature readings. Using a Raspberry Pi, an AHT20 temperature sensor (via I²C), and two PWM-controlled LEDs, the system cycles through Off, Heat, and Cool states based on a finite state machine (FSM). Three buttons allow users to toggle modes and adjust the set point, while an LCD displays the date, time, current temperature, and system state. Finally, the thermostat outputs status updates over UART every 30 seconds. This prototype addresses SysTec’s need for a low-level thermostat prototype before cloud integration. citeturn0file0turn0file3
 
-![ThermostatSet](https://github.com/user-attachments/assets/476dd942-58d1-46f3-aed8-fa3378719171)
+![ThermostatSet](https://github.com/user-attachments/assets/476dd942-58d1-46f3-aed8-fa3378719171)    ![ThermostatSet2](https://github.com/user-attachments/assets/684dfdb6-b097-4c9c-bade-6a2af41b161f)
 
+## What Went Well 
 
-## What Went Well
 
 I successfully implemented a robust three-state FSM using the `statemachine` library, accurately documented transitions, and validated functionality with the `MultiButtonTest.py` script. Integrating multiple peripherals—buttons (GPIOZero), LEDs, I²C sensor, LCD, and UART—reinforced my hardware interfacing skills and ensured reliable prototype behavior. citeturn0file1
 
